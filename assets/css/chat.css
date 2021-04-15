@@ -1,0 +1,108 @@
+/* topo */
+.top {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.top img {
+    width: 75px;
+    height: 53px;
+    margin-top: 5px;
+}
+
+.chat-contacts {
+    font-size: 40px;
+}
+
+/* mensagens */
+.messages {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 106px;
+    padding-bottom: 80px;   
+}
+
+.messages div {
+    width: 100%;
+    height: auto;
+    padding: 13px 9px;
+    border-radius: 2px;
+    margin-bottom: 4px;
+}
+
+.messages p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* escrever mensagem */
+.type-box {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
+.type-box div {
+    width: calc(100% - 26px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.type-box input {
+    width: 100%;
+    height: 30px;
+    padding: 6px 0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: #000;
+}
+
+.typing-to {
+    width: 100%;
+    height: 20px;
+    margin-top: -3px;
+    padding: 2px 0 3px 0;
+}
+
+.typing-to p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: #AEAEAE;
+}
+
+.send {
+    font-size: 28px;
+}
