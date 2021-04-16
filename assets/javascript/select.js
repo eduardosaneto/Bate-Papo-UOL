@@ -1,36 +1,34 @@
+const contact = contacts.children;
+
+function selectedContact() {
+    
+    for(let i = 0; i < contact.length; i++){
+        if(contact[i].classList.contains('selected')) {
+            contact[i].classList.remove('selected');
+        } 
+        contact[i].classList.add('selected');
+    }
+}
+
 // const contact = contacts.children;
 
 // function selectedContact(event) {
     
 //     const parent = event.currentTarget.parentNode;
-    
-//     for(let i = 0; i < contact.length; i++){
-//         if(contact[i].classList.contains('selected')) {
-//             contact[i].classList.remove('selected');
-//         } 
-//         contact[i].classList.add('selected');
+
+//     if(event.currentTarget.classList.contains('selected')) {
+//         event.currentTarget.classList.remove('selected');
+//     } else {
+//         for(let i = 0; i < parent.children.length; i++){
+//             parent.children[i].classList.remove('selected');
+//         }
+//         event.currentTarget.classList.add('selected');
 //     }
 // }
 
-const contact = contacts.children;
-
-function selectedContact(event) {
-    
-    const parent = event.currentTarget.parentNode;
-
-    if(event.currentTarget.classList.contains('selected')) {
-        event.currentTarget.classList.remove('selected');
-    } else {
-        for(let i = 0; i < parent.children.length; i++){
-            parent.children[i].classList.remove('selected');
-        }
-        event.currentTarget.classList.add('selected');
-    }
-}
-
-for(let i = 0; i < contact.length; i++){
-    contact[i].addEventListener('click', selectedContact, true);
-}
+// for(let i = 0; i < contact.length; i++){
+//     contact[i].addEventListener('click', selectedContact, true);
+// }
 
 // const opcao_escolhida = document.querySelectorAll('.produtos-lista');
 // const comida = opcao_escolhida[0].children;
