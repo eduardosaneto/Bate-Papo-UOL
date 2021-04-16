@@ -1,12 +1,12 @@
 const send = document.querySelector('.send');
-const messageWritten = document.querySelector('.type');
+const writeMessage = document.querySelector('.type');
 
 function sendMessage() {
 
     const from = enterName.value;
     // const receiver = document.querySelector('.contacts selected');
     const to = "Todos";
-    const text = messageWritten.value;
+    const text = writeMessage.value;
     // const type = document.querySelector('.public-private selected');
     const type = "message";
 

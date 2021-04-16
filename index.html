@@ -17,7 +17,6 @@
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         </head>
         <body>
-            <!-- TELA INICIAL -->
             <section class="enter-page">
                 <div class="enter-page-content">
                     <img src="assets/images/logo2.jpg" alt="logo-inicial">
@@ -30,7 +29,6 @@
                     </div>
                 </div>
             </section>
-            <!--TELA DE MENSAGENS -->
             <section class="chat-page hidden">
                 <header class="top">
                     <img src="assets/images/logo1.jpg" alt="logo-topo">
@@ -49,8 +47,8 @@
                     <ion-icon class="send" name="paper-plane-outline"></ion-icon>   
                 </div>
             </section>            
-            <!-- SIDE BAR DE USERS -->
             <section class="background hidden">
+                <div class="back-to-chat"></div>
                 <div class="sidebar">
                     <header class="choose-contact">
                         <h1>
@@ -58,14 +56,24 @@
                         </h1>                        
                     </header>
                     <ul class="contacts">
-                        <li class="selected">
+                        <li class="contact selected" onclick="selectedContact(this)">
                             <ion-icon class="icon" name="people-sharp"></ion-icon>
                             <p>Todos</p>
                             <ion-icon class="check" name="checkmark-sharp"></ion-icon>
                         </li>
-                        <li class="">
-                            <ion-icon class="icon" name="person-circle-sharp"></ion-icon>
-                            <p>Fulano</p>
+                        <li class="contact" onclick="selectedContact(this)">
+                            <ion-icon class="icon" name="people-sharp"></ion-icon>
+                            <p>Todos</p>
+                            <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+                        </li>
+                        <li class="contact" onclick="selectedContact(this)">
+                            <ion-icon class="icon" name="people-sharp"></ion-icon>
+                            <p>Todos</p>
+                            <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+                        </li>
+                        <li class="contact" onclick="selectedContact(this)">
+                            <ion-icon class="icon" name="people-sharp"></ion-icon>
+                            <p>Todos</p>
                             <ion-icon class="check" name="checkmark-sharp"></ion-icon>
                         </li>
                     </ul>
@@ -75,12 +83,12 @@
                         </h1>
                     </header>
                     <ul class="public-private">
-                        <li class="selected">
+                        <li class="restriction selected" onclick="selectedContact(this)">
                             <ion-icon class="icon" name="lock-open-sharp"></ion-icon>
                             <p>Público</p>
                             <ion-icon class="check" name="checkmark-sharp"></ion-icon>
                         </li>
-                        <li class="">
+                        <li class="restriction" onclick="selectedContact(this)">
                             <ion-icon class="icon" name="lock-closed-sharp"></ion-icon>
                             <p>Reservadamente</p>
                             <ion-icon class="check" name="checkmark-sharp"></ion-icon>
@@ -95,5 +103,9 @@
             <script src="assets/javascript/chat.js"></script>
             <script src="assets/javascript/here.js"></script>
             <script src="assets/javascript/send.js"></script>
+            <script src="assets/javascript/contacts.js"></script>
+            <script src="assets/javascript/sidebar.js"></script>
+            <script src="assets/javascript/select.js"></script>
+            <script src="assets/javascript/enterCommand.js"></script>
         </body>
     </html>

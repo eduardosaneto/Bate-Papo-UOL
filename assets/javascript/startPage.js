@@ -11,20 +11,20 @@ function startChat() {
 
     const promise = axios.post("https://mock-api.bootcamp.respondeai.com.br/api/v2/uol/participants", nameData);
 
-    promise.then(enterChat);
-    // promise.then(enterChat, loadContacts)
+    promise.then(loadChat);
     promise.catch(tryAgain);
 
     loading.classList.remove('hidden');
 }
 
-function enterChat(response) {
+function loadChat(response) {
 
     enterPage.classList.add('hidden');
     chatPage.classList.remove('hidden');
 
     setInterval(loadMessages, 3000); 
     setInterval(imHere, 5000);  
+    setInterval(loadContacts, 10000);
 }
 
 function tryAgain(error) {
