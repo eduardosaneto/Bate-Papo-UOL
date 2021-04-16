@@ -1,17 +1,12 @@
-.start-page {
+.enter-page {
     width: 100%;
     height: 100vh;
     background-color: #fff;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;*/
 }
 
-.start-page-content {
+.enter-page-content {
     width: 100%;
     height: 100%;
-    /* background-color: #fff; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -19,14 +14,14 @@
 }
 
 
-.start-page img {
+.enter-page img {
     width: 130px;
     height: 92px;
     margin-top: 72px;   
     object-fit: cover;
 }
 
-.enter {
+.enter-box {
     width: 260px;
     height: 114px;
     margin-top: 80px;
@@ -36,7 +31,7 @@
     align-items: center; 
 }
 
-.enter input {
+.enter-name {
     width: 100%;
     height: 54px;
     border: 1px solid #d7d7d7;
@@ -48,7 +43,7 @@
     color: #aeaeae;
 }
 
-.enter button {
+.enter {
     width: 109px;
     height: 45px;
     background-color: #e7e7e7;
