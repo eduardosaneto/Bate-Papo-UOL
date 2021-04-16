@@ -18,68 +18,85 @@
         </head>
         <body>
             <!-- TELA INICIAL -->
-            <section class="start-page hidden">
-                <img src="assets/images/logo1.jpg" alt="logo-inicial">
-                <div class="enter">
-                    <input type="text" placeholder="Digite seu nome">
-                    <button>Entrar</button>
+            <section class="start-page">
+                <div class="start-page-content">
+                    <img src="assets/images/logo2.jpg" alt="logo-inicial">
+                    <div class="enter">
+                        <input type="text" placeholder="Digite seu nome">
+                        <button>Entrar</button>
+                    </div>
+                    <div class="loading hidden">
+                        <img src="assets/images/loading.JPG" alt="loading">
+                    </div>
                 </div>
             </section>
             <!--TELA DE MENSAGENS -->
-            <header class="top">
-                <img src="assets/images/logo1.jpg" alt="logo-topo">
-                <ion-icon class="chat-contacts" name="people-sharp"></ion-icon>
-            </header>
-            <section class="messages">
-                <div class="public">
-                    <p>Ola Fulano</p>
+            <section class="chat-page hidden">
+                <header class="top">
+                    <img src="assets/images/logo1.jpg" alt="logo-topo">
+                    <ion-icon class="chat-contacts" name="people-sharp"></ion-icon>
+                </header>
+                <div class="messages">
+                    <div class="public">
+                        <p>Ola Fulano</p>
+                    </div>
+                    <div class="public">
+                        <p>Ola Fulano</p>
+                    </div>
                 </div>
-            </section>
-            <div class="type-box">
-                <div>
-                    <input type="text" placeholder="Escreva aqui...">
-                    <span class="typing-to ">
-                        <p>
-                            Enviando para Maria (reservadamente)
-                        </p> 
-                    </span>
+                <div class="type-box">
+                    <div>
+                        <input type="text" placeholder="Escreva aqui...">
+                        <span class="typing-to ">
+                            <p>
+                                Enviando para Maria (reservadamente)
+                            </p> 
+                        </span>
+                    </div>
+                    <ion-icon class="send" name="paper-plane-outline"></ion-icon>   
                 </div>
-                <ion-icon class="send" name="paper-plane-outline"></ion-icon>   
-            </div>
+            </section>            
             <!-- SIDE BAR DE USERS -->
             <section class="background hidden">
                 <div class="sidebar">
                     <header class="choose-contact">
                         <h1>
-
+                            Escolha um contato <br> para enviar mensagem:
                         </h1>                        
                     </header>
-                    <div class="all-contacts">
-                        <ion-icon class="icon" name="people-sharp"></ion-icon>
-                        <p></p>
-                        <ion-icon class="check" name="checkmark-sharp"></ion-icon>
-                    </div>
-                    <div class="contact">
-                        <ion-icon class="icon" name="person-circle-sharp"></ion-icon>
-                        <p></p>
-                        <ion-icon class="check hidden" name="checkmark-sharp"></ion-icon>
-                    </div>
-                    <span class="chose-audience">
-                        <h1></h1>
-                    </span>
-                    <div class="public-private">
-                        <io-icon class="icon" name="lock-open-sharp"></ion-icon>
-                            <p></p>
-                        <ion-icon class="check" name="checkmark-sharp"></ion-icon>
-                    </div>
-                    <div class="public-private">
-                        <ion-icon class="icon" name="lock-closed-sharp"></ion-icon>
-                        <p></p>
-                        <ion-icon class="check hidden" name="checkmark-sharp"></ion-icon>
-                    </div>
+                    <ul class="contacts">
+                        <li class="selected">
+                            <ion-icon class="icon" name="people-sharp"></ion-icon>
+                            <p>Todos</p>
+                            <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+                        </li>
+                        <li class="">
+                            <ion-icon class="icon" name="person-circle-sharp"></ion-icon>
+                            <p>Fulano</p>
+                            <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+                        </li>
+                    </ul>
+                    <header class="choose-audience">
+                        <h1>
+                            Escolha a visibilidade:
+                        </h1>
+                    </header>
+                    <ul class="public-private">
+                        <li class="selected">
+                            <ion-icon class="icon" name="lock-open-sharp"></ion-icon>
+                            <p>Público</p>
+                            <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+                        </li>
+                        <li class="">
+                            <ion-icon class="icon" name="lock-closed-sharp"></ion-icon>
+                            <p>Reservadamente</p>
+                            <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
             <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+            
         </body>
     </html>

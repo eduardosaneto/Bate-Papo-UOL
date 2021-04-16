@@ -1,25 +1,88 @@
 /* sombra de fundo */
 .background {
-
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
 }
 
 /* SIDEBAR */
 .sidebar {
-
+    width: 259px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 3;
 }
 
-.chose-contact, .chose-audience{
-
+.choose-contact, .choose-audience{
+    width: 100%;
+    padding: 22px 30px;
+    text-align: center;
 }
 
-.all-contacts, .contact, .public-private {
+.choose-contact h1, .choose-audience h1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #000;
+}
 
+.contacts {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 4px;
+    overflow-y: scroll;
+}
+
+.public-private {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contacts li, .public-private li {
+    width: 100%;
+    height: 36px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 17px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.contacts p, .public-private p {
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #000;
 }
 
 .icon {
-
+    font-size: 20px;
+    margin-right: 8px;
 }
 
 .check {
+    display: none;  
+}
 
+.selected .check {
+    display: inline-block;
+    font-size: 14px;
+    color: #28BB25;
+    position: absolute;
+    right: 27px;
 }

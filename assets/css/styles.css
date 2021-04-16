@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+p, h1, input {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    }
+
 textarea:focus, input:focus, select:focus, button:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
