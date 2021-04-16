@@ -9,7 +9,7 @@ p, h1, input, span {
 
 *::-webkit-scrollbar {
     display: none;
-    }
+}
 
 textarea:focus, input:focus, select:focus, button:focus {
     box-shadow: 0 0 0 0;

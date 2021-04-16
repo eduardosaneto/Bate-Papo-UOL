@@ -3,23 +3,13 @@ function loadMessages() {
 
     promise.then(messageTypes);
     promise.catch(reloadPage);
-
-    const elementoQueQueroQueApareca = document.querySelector('.message:last-child');
-    console.log(elementoQueQueroQueApareca);
-    // elementoQueQueroQueApareca.scrollIntoView();
-
-    // console.log(response);
-    // console.log(response.data);
+    
 }
 
 function messageTypes(response) {
 
     const messagesBox = document.querySelector('.messages-box'); 
     const chatMessages = response.data;
-
-
-
-    console.log(chatMessages);
     
     for(let i = 0; i < chatMessages.length; i++){
         if(chatMessages[i].type === "status"){
@@ -35,7 +25,7 @@ function messageTypes(response) {
                             </div>`;
         } else if (chatMessages[i].type === 'private_message') {
             messagesBox.innerHTML += `
-                            <div class="message in-out">
+                            <div class="message private">
                                 <p>
                                     <span>(${chatMessages[i].time}) </span> 
                                 </p>
@@ -46,7 +36,7 @@ function messageTypes(response) {
                                     ${chatMessages[i].text}
                                 </p>
                             </div>`;
-        } else if (chatMessages[i].type === 'public') {
+        } else if (chatMessages[i].type === 'message') {
             messagesBox.innerHTML += `
                             <div class="message public">
                                 <p>
@@ -61,6 +51,8 @@ function messageTypes(response) {
                             </div>`;
         }
     }
+    const lastMessage = document.querySelector('.message:last-child');
+    lastMessage.scrollIntoView();
 }
 
 function reloadPage(error) {
